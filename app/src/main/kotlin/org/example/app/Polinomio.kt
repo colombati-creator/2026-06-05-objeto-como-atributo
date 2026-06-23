@@ -1,7 +1,11 @@
 package org.example.app
 
-open class Polinomio(){
-    override fun toString(): String {
-        return "Soy un Polinomio"
+open class Polinomio(var terminos: List<Terminos> = ArrayList<Terminos>()) {
+   
+     override fun toString(): String {
+        for (p in terminos){
+            print(p)
+        }
+        return "${terminos}"
     }
 }
